@@ -1,0 +1,64 @@
+@import 'accessibility';
+@import 'grid';
+
+.flex { display: flex; }
+.flex-column { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-column-reverse { flex-direction: column-reverse; }
+.flex-align-start { align-items: flex-start; }
+.flex-align-end { align-items: flex-end; }
+.flex-align-center { align-items: center; }
+.flex-align-baseline { align-items: baseline; }
+.flex-align-stretch { align-items: stretch; }
+.flex-justify-start { justify-content: flex-start; }
+.flex-justify-end { justify-content: flex-end; }
+.flex-justify-center { justify-content: center; }
+.flex-justify-space-between { justify-content: space-between; }
+.flex-justify-space-around { justify-content: space-around; }
+.flex-justify-space-evenly { justify-content: space-evenly; }
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.text-underline { text-decoration: underline; }
+
+.text-uppercase { text-transform: uppercase; }
+.text-lowercase { text-transform: lowercase; }
+.text-capitalize { text-transform: capitalize; }
+
+.text-bold { font-weight: 500; }
+.text-semibold { font-weight: 600; }
+.text-italic { font-style: italic; }
+
+.gutter-y-sm { column-gap: 8px };
+.gutter-x-sm { row-gap: 8px };
+
+.gutter-y-md { column-gap: 12px };
+.gutter-x-md { row-gap: 12px };
+
+.gutter-y-lg { column-gap: 24px };
+.gutter-x-lg { row-gap: 24px };
+
+.gutter-y-xlg { column-gap: 32px };
+.gutter-x-xlg { row-gap: 32px };
+
+.text-sm { font-size: 14px; }
+.text-md { font-size: 16px; line-height: 1.5; }
+.w-100 { width: 100%; }
+.h-100 { height: 100%; }
+
+.absolute { position: absolute; }
+.relative { position: relative; }
+
+.tag {
+  background-color: var(--color-section-background-tag);
+  padding: 6px 16px;
+  border-radius: 100px;
+  line-height: 1.7;
+}

@@ -1,0 +1,153 @@
+.testimonial {
+  padding: 0 20px;
+  margin-bottom: 175px;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+
+  .section-header {
+    max-width: 523px;
+
+    &__gradient {
+      filter: none;
+      left: -106px;
+      top: -79px;
+    }
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    padding: 30px;
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  &__slider {
+    margin-top: 80px;
+  }
+
+  &__client {
+    width: max-content;
+    border: 1px solid var(--color-3);
+    padding: 8px 24px 8px 8px;
+    border-radius: 100px;
+    gap: 14px;
+    margin-inline: auto;
+  }
+
+  &__img {
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-background-placeholder);
+    border-radius: 50%;
+
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  &__details {
+    h5 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    h6 {
+      line-height: 1.7;
+    }
+  }
+
+  .swiper {
+    position: static;
+    overflow: visible;
+
+    &-btns {
+
+      @media (max-width: 767px) {
+        position: static;
+        margin-top: 45px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 125px;
+      }
+    }
+
+    .swiper-wrapper {
+      overflow-y: visible;
+    }
+
+    &-slide {
+      p {
+        max-width: 940px;
+        font-size: 32px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-inline: auto;
+
+        @media (max-width: 767px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-button {
+      &-next {
+        top: -130px;
+        right: -30px;
+        margin: 0;
+
+        @media (max-width: 767px) {
+          position: static;
+        }
+
+        &::after {
+          content: " ";
+        }
+      }
+
+      &-prev {
+        top: -130px;
+        left: -30px;
+        margin: 0;
+
+        @media (max-width: 767px) {
+          position: static;
+        }
+
+        &::after {
+          content: " ";
+        }
+      }
+    }
+  }
+
+  &__project {
+    top: 20px;
+    left: 10px;
+    width: 30%;
+    height: 70%;
+    transform: translate(-20%, -50%) rotate(15deg);
+    opacity: 0;
+    transition: opacity 0.3s;
+    border: 2px solid var(--color-3);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .swiper-slide:hover .testimonial__project {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,97 @@
+.btn {
+	padding: 12px 40px;
+	text-decoration: none;
+	border-radius: 100px;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	position: relative;
+
+	&:not(.btn--outline) {
+		background-color: var(--color-background-button);
+		color: var(--color-button-text);
+	}
+
+	&::before {
+		content: "";
+		background-repeat: no-repeat;
+		background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>');
+		display: inline-block;	
+		width: 22px;
+		height: 22px;
+		font-family: Inter; 
+		font-size: inherit;
+		position: absolute;
+		top: 50%;
+		right: 32px;  
+		transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+		opacity: 0;
+		transform: translate(-100%, -50%);
+	}
+
+	&:hover::before {
+		opacity: 1;
+		transform: translate(0, -50%);
+
+		@media (max-width: 767px) {
+			transform: none;
+			opacity: 0;
+		}
+	}
+	
+	&:hover::after {
+		opacity: 0;
+		transform: translate(100%, -50%);
+		
+		@media (max-width: 767px) {
+			transform: none;
+			opacity: 1;
+		}
+	}
+}
+
+.btn--arrow {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	&::after {
+		content: "";
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' fill='none'%3E%3Cpath d='m1.5 13 12-12m0 0v12m0-12h-12' stroke='%23141414' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+		width: 13px;
+		height: 12px;
+		display: inline-block;
+		background-size: cover;
+		background-repeat: no-repeat;
+		transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+
+		@media (max-width:767px) {
+			transform: none;
+		}
+	}
+}
+
+.btn--outline {
+	position: relative;
+	background-image: linear-gradient(90deg, var(--color-1) 0%, var(--color-2) 51.5%, var(--color-3) 100%);
+	border-radius: 100px;
+	padding: 2px;
+
+	span {
+		background: var(--color-background-button);
+		padding: 12px 40px;
+		white-space: nowrap;
+		border-radius: inherit;
+		@extend .btn--arrow;
+		
+		&:hover::after {
+		 opacity: 0;
+		 transform: translate(100%, -50%);
+
+		 @media (max-width: 767px) {
+			opacity: 1;
+			transform: none;
+		 }
+	 }
+ 	}
+}

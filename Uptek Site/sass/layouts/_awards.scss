@@ -1,0 +1,28 @@
+.awards {
+  &__wrapper {
+    margin-top: 56px;
+  }
+
+  .section-header__gradient {
+    filter: unset;
+    left: 157px;
+    top: -29px;
+
+    @media (max-width: 767px) {
+      left: auto;
+    }
+  }
+
+  &__award {
+    width: 100%;
+    max-width: 263px;
+    padding: 32px;
+    background-color: var(--color-5);
+    border-radius: 32px;
+
+    img {
+      max-width: 148px;
+      height: 148px;
+    }
+  }
+}

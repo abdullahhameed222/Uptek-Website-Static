@@ -1,0 +1,32 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	font-family: var(--font-heading);
+}
+
+.h1, h1 {
+	font-size:  unquote("clamp(1.5rem, 0.6364rem + 3.6364vw, 5rem)");
+}
+
+.h2, h2 {
+	font-size: unquote("clamp(1.75rem, 0.3214rem + 2.9762vw, 3rem)");
+}
+
+.h3, h3 {
+	font-size: unquote("clamp(1.5rem, 0.9091rem + 1.8182vw, 2.5rem)");
+}
+
+.h4, h4 {
+	font-size: unquote("clamp(1.125rem, 0.6623rem + 1.9481vw, 3rem)");
+}
+
+.h5, h5 {
+	font-size: unquote("clamp(1.125rem, 1.0325rem + 0.3896vw, 1.5rem)");
+}
+
+.h6, h6 {
+	font-size: unquote("clamp(1.5rem, 0.9091rem + 0.4545vw, 1.25rem)");
+}

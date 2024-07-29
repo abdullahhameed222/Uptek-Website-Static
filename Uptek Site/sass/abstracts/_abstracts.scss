@@ -1,0 +1,32 @@
+:root {
+  --color-1: #89FFBF;
+  --color-2: #A4FA85;
+  --color-3: #A8E5A4;
+  --color-4: #FFFFFF;
+  --color-5: #F8FAFC;
+  --color-6: #141414;
+  --color-7: #1F1F1F;
+
+  --color-background-body: var(--color-4);
+  --color-background-placeholder: #C4CCD4;
+  --color-services-background: var(--color-5);
+  --color-gradient: var(--color-background-hero);
+  --color-background-hero: linear-gradient(90deg, var(--color-1) 0%, var(--color-2) 51.5%, var(--color-3) 100%);
+  --color-text-body: #141414;
+
+  --color-footer-text: var(--color-4);
+  --color-button-text: var(--color-text-body);
+  --color-section-background: var(--color-text-body);
+  --color-background-header: var(--color-background-body);
+  --color-background-tag: var(--color-background-body);
+  --color-background-button: var(--color-background-body);
+  --color-section-background-tag: var(--color-4);
+
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-heading-weight: 600;
+  --font-heading-line-height: 1.2;
+
+  --font-body: 'Inter', sans-serif;
+  --font-body-weight: 400;
+  --font-body-line-height: 1.6;
+}

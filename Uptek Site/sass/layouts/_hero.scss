@@ -1,0 +1,112 @@
+.hero {
+  background-image: var(--color-background-hero);
+  padding-block: 190px 124px;
+
+  &--rounded {
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
+
+  &__tags {
+    margin-bottom: 16px;
+    padding: 6px 16px;
+
+    @media (max-width: 767px) {
+      padding: 5px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .tag {
+      @media (max-width: 767px) {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 40px;
+    position: relative;    
+    line-height: 1.7;
+  }
+
+  .h1 {
+    span {
+      width: 285px;
+      height: 113px;
+      display: inline-block;
+      border-radius: 100px;
+      margin-left: 24px;
+      overflow: hidden;
+  
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
+      video, img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.link-arrow {
+  background-color: white;
+  border-radius: 100px;
+  color: red;   
+  display: inline-block;
+  flex: 0 auto;
+  -webkit-box-flex: 0;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1em;
+  min-width: 364px;
+  padding: 16px 32px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+.link-arrow::before {
+  content: "->";
+  display: block;
+  font-family: Inter; 
+  font-size: inherit;
+  position: absolute;
+  top: 50%;
+  right: 32px;  
+  transform: translate(0%, -50%);
+  transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+}
+
+.link-arrow::after {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' fill='none'%3E%3Cpath d='m1.5 13 12-12m0 0v12m0-12h-12' stroke='%23141414' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  display: block;
+  font-family: Inter;
+  font-size: inherit;
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  transform: translate(0%, -50%);
+  transition: all 0.5s cubic-bezier(0.25, 0.25, 0.08, 1.08);
+}
+
+.link-arrow::before {
+  opacity: 0;
+  transform: translate(-100%, -50%);
+}
+
+.link-arrow:hover::before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+.link-arrow:hover::after {
+  opacity: 0;
+  transform: translate(100%, -50%);
+}
