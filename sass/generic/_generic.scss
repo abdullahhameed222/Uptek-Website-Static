@@ -51,16 +51,16 @@ main {
 
 .body-shape {
   position: absolute;
-  top: -20px;
-  left: 50%;
+  top: -117px;
+  left: 41%;
   transform: translateX(-50%);
   z-index: -1;
-  
-  @media (max-width:1300px) {
+
+  @media (max-width: 1300px) {
     left: 20%;
   }
 
-  @media (max-width:1024px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 }

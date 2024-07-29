@@ -1361,8 +1361,8 @@ main {
 
 .body-shape {
 	position: absolute;
-	top: -20px;
-	left: 50%;
+	top: -117px;
+	left: 41%;
 	transform: translateX(-50%);
 	z-index: -1;
 }
