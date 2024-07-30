@@ -17,7 +17,7 @@
 		"sass/generic/_normalize.scss",
 		"sass/layouts/_header.scss",
 		"sass/layouts/_footer.scss",
-		"sass/pages/_homepage.scss",
+		"sass/pages/_index.scss",
 		"sass/layouts/_hero.scss",
 		"sass/layouts/_services.scss",
 		"sass/layouts/_previous.scss",
