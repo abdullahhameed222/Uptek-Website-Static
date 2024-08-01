@@ -9,7 +9,7 @@ section:not(.hero) {
   }
 
   @media (max-width: 767px) {
-    margin-top: 60px;
+    margin-top: 100px;
   }
 }
 
@@ -50,9 +50,8 @@ main {
 }
 
 .body-shape {
-  position: absolute;
   top: -117px;
-  left: 41%;
+  left: 46%;
   transform: translateX(-50%);
   z-index: -1;
 

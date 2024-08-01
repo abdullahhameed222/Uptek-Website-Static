@@ -25,8 +25,11 @@
   }
 
   &__contentbox {
+    h2 {
+      margin-bottom: 20px;
+    }
+
     p {
-      margin-top: 20px;
       max-width: 585px;
       margin-bottom: 56px;
 
@@ -93,7 +96,6 @@
     }
 
     .pricing-plan__details {
-      padding:119px 48px 106px 48px;
       
       @media (max-width: 1024px) {
         max-width: unset;
@@ -112,12 +114,6 @@
       img {
         margin-bottom: 16px;
         max-width: unset;
-      }
-
-      span {
-        line-height: 1.5;
-        font-size: 16px;
-        margin: 0;
       }
     }
   }
@@ -149,7 +145,7 @@
       left: 36%;
 
       @media (max-width: 1024px) {
-        left: 44%;
+        left: 41%;
         top: -1px;
         max-width: unset;
         border-radius: 20px;
@@ -191,7 +187,7 @@
       border-radius: 20px;
     }
 
-    .pricing-plan__ctabtn {
+    .pricing-plan__cta {
       background-image: var(--color-gradient);
     }
   }

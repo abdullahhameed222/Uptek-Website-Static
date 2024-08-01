@@ -7,29 +7,30 @@
     <link rel="stylesheet" href="../style.css">
   </head>
   <body class="contact-us__bg">
+
     <header class="header w-100 absolute">
       <div class="container flex">
         <div class="site-branding flex flex-align-center full-rounded header__item">
-            <a href="../index.html" rel="home">
-              <img src="../assets/icons/icon-logo.svg" alt="logo">
-            </a>
+          <a href="../index.html">
+            <img src="../assets/icons/icon-logo.svg" alt="logo">
+          </a>
         </div>
-        <nav class="main-navigation header__item full-rounded text-uppercase text-semibold" id="site-navigation">
-          <ul id="primary-menu" class="main-menu">
+        <nav class="main-navigation header__item full-rounded text-uppercase text-semibold">
+          <ul id="primary-menu" class="flex flex-align-center flex-wrap main-menu flex-justify-space-around header__item">
             <li><a href="../index.html">home</a></li>
-            <li><a href="../templates/services.html">Services</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
             <li><a href="#">Testimonials</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </nav>
-        <a href="../templates/contact.html" class="full-rounded header__item btn btn--arrow">Contact</a>
-        <div>
+        <a href="./templates/contact.html" class="full-rounded header__item btn btn--arrow">Contact</a>
         <div class="hamburger">
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
         </div>
+      </div>  
     </header>
     
     <section class="contact-us">
@@ -39,7 +40,7 @@
         </h1>
         <div class="contact-us__container">
           <h2 class="h2">Get A Quote</h2>
-          <form class="flex flex-column" action="#" method="POST">
+          <form class="field flex flex-column" action="#" method="POST">
             <input type="text" placeholder="my name is" name="name"> 
             <select>
               <option disabled selected>I'm Looking for</option>
@@ -64,7 +65,7 @@
           </li>
     
           <li>
-            <a href="../templates/services.html" class="footer__nav--link relative text-semibold text-uppercase">Services</a>
+            <a href="/pages/services.html" class="footer__nav--link relative text-semibold text-uppercase">Services</a>
           </li>
     
           <li>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
   </head>
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
   <body>
 
     <header class="header w-100 absolute">
@@ -16,33 +16,33 @@
           </a>
         </div>
         <nav class="main-navigation header__item full-rounded text-uppercase text-semibold">
-          <ul id="primary-menu" class="main-menu">
+          <ul id="primary-menu header__item flex flex-wrap flex-justify-space-around" class="main-menu">
             <li><a href="index.html">home</a></li>
-            <li><a href="./templates/services.html">Services</a></li>
+            <li><a href="pages/services.html">Services</a></li>
             <li><a href="#">Testimonials</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </nav>
-        <a href="./templates/contact.html" class="full-rounded header__item btn btn--arrow">Contact</a>
-        <div>
+        <a href="pages/contact.html" class="full-rounded header__item btn btn--arrow">Contact</a>
         <div class="hamburger">
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
         </div>
+      </div>  
     </header>
-
-    <section class="hero hero--rounded">
-      <div class="container flex flex-column flex-align-center text-center">
-        <div class="hero__tags flex flex-align-center text-uppercase text-sm text-semibold gutter-y-sm">
-          Taking care of 
-          <div class="flex">
-            <span class="tag">Themes</span>
-            <span class="tag">Plugins</span>
-            <span class="tag">ux</span>
-          </div>
-        </div>
+        
+        <section class="hero hero--rounded">
+          <div class="container flex flex-column flex-align-center text-center">
+            <div class="hero__tags flex flex-align-center text-uppercase text-sm text-semibold gutter-y-sm">
+              Taking care of 
+              <div class="flex">
+                <span class="tag">Themes</span>
+                <span class="tag">Plugins</span>
+                <span class="tag">ux</span>
+              </div>
+            </div>
         <h1 class="h1 flex items-center flex-wrap flex-justify-center flex-align-center">We are a Full-stack
           <span>
             <video src="../assets/images/hero-video.mp4" autoplay muted loop></video>
@@ -54,14 +54,14 @@
     </section>
   
     <main>
-      <div class="body-shape">
-        <svg width="1343" height="8559px" viewBox="0 0 1066 7681" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M433.497 12C738.666 288.121 1406.5 772.5 1304.81 1305.26C1223.48 1731.33 992.616 1691.59 859.092 1560.48C714.5 1418.5 748.136 1181.87 984.686 1159.98C1221.24 1138.09 1397.82 1547.55 1248.15 1938.59C1098.47 2329.64 124.218 2408.39 59.4969 2967C7.99691 3411.5 671.112 3677.19 903.997 3522C1106.29 3387.2 1018.43 3168.01 777.997 3102C604.997 3054.5 246.822 3173.7 289.497 4161.5C323.497 4948.5 1274.5 4660 1286.86 4381.89C1298.41 4122.34 986.515 4025.35 766.497 4041C393.997 4067.5 -41.3348 4548.21 164.997 5090.5C371.329 5632.79 690.394 6137.7 193.354 6669.47C-102.5 6986 -25.7264 7534.65 360.024 7765.5" stroke="url(#paint0_linear_605_266)" stroke-width="24" stroke-linecap="round"/>
+      <div class="body-shape absolute">
+        <svg width="1535" height="8566px" viewBox="0 0 1286 7587" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M433.497 12C738.666 288.121 1406.5 772.5 1304.81 1305.26C1223.48 1731.33 992.616 1691.59 859.092 1560.48C714.5 1418.5 748.136 1181.87 984.686 1159.98C1221.24 1138.09 1397.82 1547.55 1248.15 1938.59C1098.47 2329.64 124.218 2408.39 59.4969 2967C7.99691 3411.5 671.112 3677.19 903.997 3522C1106.29 3387.2 1018.43 3168.01 777.997 3102C604.997 3054.5 246.822 3173.7 289.497 4161.5C323.497 4948.5 1274.5 4660 1286.86 4381.89C1298.41 4122.34 986.515 4025.35 766.497 4041C393.997 4067.5 -41.3348 4548.21 164.997 5090.5C371.329 5632.79 690.394 6137.7 193.354 6669.47C-102.5 6986 -25.7264 7534.65 360.024 7765.5" stroke="url(#paint0_linear_605_266)" stroke-width="24" stroke-linecap="round" style="stroke-dasharray: 15000.8; stroke-dashoffset: 13666;"></path>
           <defs>
           <linearGradient id="paint0_linear_605_266" x1="12.9805" y1="3901.06" x2="1315.24" y2="3901.06" gradientUnits="userSpaceOnUse">
-          <stop stop-color="var(--color-1)"/>
-          <stop offset="0.515" stop-color="var(--color-2)"/>
-          <stop offset="1" stop-color="var(--color-3)"/>
+          <stop stop-color="var(--color-1)"></stop>
+          <stop offset="0.515" stop-color="var(--color-2)"></stop>
+          <stop offset="1" stop-color="var(--color-3)"></stop>
           </linearGradient>
           </defs>
         </svg>
@@ -131,11 +131,11 @@
             <a href="#" class="btn btn--outline">
               <span>ALL PROJECTS</span>
             </a>
-            <div class="previous-work__desc">
+            <div class="previous-work__desc display-none">
               <h2 class="h2">What we can do for you in Frontend development?</h2>
               <p>Arrow scale overflow layer project select. Scrolling bold star outline ipsum device distribute. Connection create vector connection Arrow scale overflow layer project select. Scrolling bold star outline ipsum device distribute. Connection create vector connection </p>
             </div>
-            <div class="previous-work__tags">
+            <div class="previous-work__tags display-none">
               <div class="flex">
                 <div class="previous-work__tag text-semibold">shopify store design</div>
                 <div class="previous-work__tag text-semibold">ul design</div>
@@ -383,12 +383,12 @@
           </div>
     
           <div class="pricing-plan__wrapper flex">
-            <div class="pricing-plan--one">
-              <div class="pricing-plan__details text-center">
-                <div>
-                  <img src="../assets/icons/icon-pricing-table.svg" alt="gradient" aria-hidden="true"/>
-                </div>
-                <span>Pricing packages</span>
+            <div class="pricing pricing-plan--one">
+              <div class="text-left pricing-plan__details text-center">
+                <span class="text-semibold">Silver</span>
+                <p>Best package for startups</p>
+                <h4 class="price">$399</h4>
+                <a href="#" class="pricing-plan__cta btn btn--arrow flex-justify-center">Get Started</a>
               </div>
               <div class="pricing-plan__features">
                 <p class="text-semibold">1 Shopify or WordPress Basic Store</p>
@@ -403,9 +403,9 @@
             <div class="pricing pricing-plan--second relative">
               <div class="text-left pricing-plan__details text-center">
                 <div class="pricing-plan__bestvalue text-semibold text-center absolute text-uppercase">Best value</div>
-                <span class="text-semibold">Silver</span>
+                <span class="text-semibold">Bronze</span>
                 <p>Best package for startups</p>
-                <h4 class="price">$599</h4>
+                <h4 class="price">$499</h4>
                 <a href="#" class="btn btn--arrow pricing-plan__cta">Get Started</a>
               </div>
               <div class="pricing-plan__features">
@@ -438,7 +438,7 @@
     
             <div class="pricing pricing-plan--third">
               <div class="text-left pricing-plan__details text-center">
-                <span class="text-semibold">Silver</span>
+                <span class="text-semibold">Gold</span>
                 <p>Best package for startups</p>
                 <h4 class="price">$599</h4>
                 <a href="#" class="pricing-plan__cta btn btn--arrow flex-justify-center">Get Started</a>
@@ -556,7 +556,7 @@
             </li>
     
             <li>
-              <a href="./templates/services.html" class="footer__nav--link relative text-semibold text-uppercase">Services</a>
+              <a href="pages/services.html" class="footer__nav--link relative text-semibold text-uppercase">Services</a>
             </li>
     
             <li>
@@ -576,9 +576,9 @@
       </footer>
     </main>
 
-    <script src="../js/script.js"></script>
-    <script src="../js/faqs.js"></script>
-    <script src="../js/testimonial.js"></script>
-    <script src="../js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/faqs.js"></script>
+    <script src="js/testimonial.js"></script>
+    <script src="js/swiper.min.js"></script>
   </body>
 </html>

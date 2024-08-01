@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Services</title>
   <link rel="stylesheet" href="../style.css">
 </head>
   <body>
@@ -16,28 +16,28 @@
           </a>
         </div>
         <nav class="main-navigation header__item full-rounded text-uppercase text-semibold">
-          <ul id="primary-menu" class="main-menu">
+          <ul class="flex flex-align-center flex-wrap main-menu flex-justify-space-around header__item">
             <li><a href="../index.html">home</a></li>
-            <li><a href="../templates/services.html">Services</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
             <li><a href="#">Testimonials</a></li>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </nav>
-        <a href="../templates/contact.html" class="full-rounded header__item btn btn--arrow">Contact</a>
-        <div>
+        <a href="contact.html" class="full-rounded header__item btn btn--arrow">Contact</a>
         <div class="hamburger">
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
         </div>
+      </div>  
     </header>
 
     <section class="hero hero-services hero--rounded relative">
       <div class="container flex flex-justify-space-between">
         <img src="../assets/images/img-hero-services-bg.png" alt="gradient" aria-hidden="true" class="section-header__gradient"/>
         <div class="hero-services__content">
-          <h1 class="text-left" >Creative Frontend Development Solutions</h1>
+          <h1 class="text-left">Creative Frontend Development Solutions</h1>
           <p class="text-left">Arrow scale overflow layer project select. Scrolling bold star outline ipsum device distribute. distribute. Connection create vector connection </p>
           <div class="hero-services__logos flex flex-wrap">
           <img src="../assets/icons/icon-hero-logo-one.svg" alt="logo" aria-hidden="true"/>
@@ -50,7 +50,7 @@
       <div class="contact-us services">
         <div class="contact-us__container flex flex-column">
           <h2 class="text-left">Get A Quote</h2>
-          <form class="flex flex-column" action="#" method="POST">
+          <form class="field flex flex-column" action="#" method="POST">
             <input type="text" placeholder="my name is" name="name">
             <select>
               <option disabled selected>I'm Looking for</option>
@@ -67,27 +67,23 @@
     <section class="previous-work">
       <div class="container">
         <div class="section-header flex flex-justify-space-between flex-align-center relative">
-          <img src="../assets/images/img-previous-work-bg.png" alt="gradient" aria-hidden="true" class="section-header__gradient"/>
-          <h2 class="h2">Work speaks for itself</h2>
-          <a href="#" class="btn btn--outline">
-            <span>ALL PROJECTS</span>
-          </a>
-          <div class="previous-work__desc">
+          <img src="../assets/images/img-services-previous-work-bg.png" alt="gradient" aria-hidden="true" class="absolute section-header__gradient previous-work__bg"/>
+          <div class="previous-work__desc flex flex-column">
             <h2 class="h2">What we can do for you in Frontend development?</h2>
             <p>Arrow scale overflow layer project select. Scrolling bold star outline ipsum device distribute. Connection create vector connection Arrow scale overflow layer project select. Scrolling bold star outline ipsum device distribute. Connection create vector connection </p>
           </div>
-          <div class="previous-work__tags">
+          <div class="previous-work__tags flex flex-wrap">
             <div class="flex">
-              <div class="previous-work__tag text-semibold">shopify store design</div>
-              <div class="previous-work__tag text-semibold">ul design</div>
+              <div class="previous-work__tag text-semibold text-uppercase">shopify store design</div>
+              <div class="previous-work__tag text-semibold text-uppercase">ul design</div>
             </div>
             <div class="flex">
-              <div class="previous-work__tag text-semibold">Seo</div>
-              <div class="previous-work__tag text-semibold">shopify plugin development</div>
+              <div class="previous-work__tag text-semibold text-uppercase">Seo</div>
+              <div class="previous-work__tag text-semibold text-uppercase">shopify plugin development</div>
             </div>
             <div class="flex">
-              <div class="previous-work__tag text-semibold">cro</div>
-              <div class="previous-work__tag text-semibold">shopify to wordpress</div>
+              <div class="previous-work__tag text-semibold text-uppercase">cro</div>
+              <div class="previous-work__tag text-semibold text-uppercase">shopify to wordpress</div>
             </div>
           </div>
         </div>
@@ -155,33 +151,33 @@
       </div>
     </section>
     
-    <section class="featured relative">
+    <section class="steps relative">
       <div class="container">
-        <h2 class="featured__title relative text-center">Our unique approach for Frontend Development</h2>
-        <img src="../assets/icons/icon-featured-bg.svg" alt="gradient" aria-hidden="true" class="section-header__gradient"/>
-        <div class="featured__container flex flex-column">
-          <div class="featured__contentbox flex flex-column">
+        <h2 class="steps__title relative text-center">Our unique approach for Frontend Development</h2>
+        <img src="../assets/icons/icon-steps-bg.svg" alt="gradient" aria-hidden="true" class="section-header__gradient"/>
+        <div class="steps__container flex flex-column">
+          <div class="steps__card flex flex-column flex-align-center">
             <h2 class="text-semibold text-center text-uppercase">discover</h2>
-            <div class="featured__content flex flex-justify-space-between flex-align-center">
-              <div class="featured__details">
+            <div class="steps__content flex flex-justify-space-between flex-align-center">
+              <div class="steps__details">
                 <h3 class="text-semibold">Some Dummy Heading Goes Here</h3>
                 <p>Arrow scale overflow layer project select. Scrolling bold star outline ipsum device distribute. Connection create vector connection Arrow scale overflow layer project select.</p>
               </div>
-              <div class="featured__img">
-                <img src="../assets/images/img-featured.png" alt="featured img"/>
+              <div class="steps__img">
+                <img src="../assets/images/img-steps.png" alt="steps img"/>
               </div>
             </div>
           </div>
     
-          <div class="featured__contentbox opacity flex flex-column">
+          <div class="steps__card steps__card--disabled flex flex-column flex-align-center">
             <h2 class="text-semibold text-center text-uppercase">planning</h2>
-            <div class="featured__content flex flex-justify-space-between flex-align-center">
-              <div class="featured__details">
+            <div class="steps__content flex flex-justify-space-between flex-align-center">
+              <div class="steps__details">
                 <h3 class="text-semibold">Some Dummy Heading Goes Here</h3>
                 <p>Arrow scale overflow layer project select. Scrolling bold star outline ipsum device distribute. Connection create vector connection Arrow scale overflow layer project select.</p>
               </div>
-              <div class="featured__img">
-                <img src="../assets/images/img-featured.png" alt="featured img"/>
+              <div class="steps__img">
+                <img src="../assets/images/img-steps.png" alt="steps img"/>
               </div>
             </div>
           </div>
@@ -203,7 +199,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial__client flex flex-justify-center flex-align-center">
                     <div class="testimonial__img">
-                    <img src="../assets/images/img-customer-dia.png" alt="customer-pic" aria-hidden="true"/>
+                      <img src="../assets/images/img-customer-dia.png" alt="customer-pic" aria-hidden="true"/>
                     </div>
                     <div class="testimonial__details">
                       <h5 class="text-capitalize">Dave Brown</h5>
@@ -219,7 +215,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial__client flex flex-justify-center flex-align-center">
                     <div class="testimonial__img">
-                    <img src="../assets/images/img-customer-backflip.jpeg" alt="customer-img" aria-hidden="true"/>
+                      <img src="../assets/images/img-customer-backflip.jpeg" alt="customer-img" aria-hidden="true"/>
                     </div>
                     <div class="testimonial__details">
                       <h5 class="text-capitalize">Scott Pfeil</h5>
@@ -235,7 +231,7 @@
                 <div class="swiper-slide">
                   <div class="testimonial__client flex flex-justify-center flex-align-center">
                     <div class="testimonial__img">
-                    <img src="../assets/images/img-customer-joov.jpeg" alt="customer-img" aria-hidden="true"/>
+                      <img src="../assets/images/img-customer-joov.jpeg" alt="customer-img" aria-hidden="true"/>
                     </div>
                     <div class="testimonial__details">
                       <h5 class="text-capitalize">Wesley Pfiffner</h5>
@@ -286,7 +282,7 @@
           </li>
 
           <li>
-            <a href="../templates/services.html" class="footer__nav--link relative text-semibold text-uppercase">Services</a>
+            <a href="services.html" class="footer__nav--link relative text-semibold text-uppercase">Services</a>
           </li>
 
           <li>
@@ -305,11 +301,9 @@
       </div>
     </footer>
 
-    <script src="../js/script.js"></script>
-    <script src="../js/faqs.js"></script>
-    <script src="../js/testimonial.js"></script>
-    <script src="../js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/testimonial.js"></script>
+    <script src="js/swiper.min.js"></script>
   </body>
 </html>
 
-<?php get_footer();?>

@@ -7,7 +7,7 @@ $headerHeight: 66px;
   z-index: 2;
 
   .container {
-    height: $headerHeight;
+   height: $headerHeight;
 
     @media (max-width: 1024px) {
       padding-inline: 10px;
@@ -89,9 +89,12 @@ $headerHeight: 66px;
   }
 
   .main-navigation {
-    padding: 8px;
+    // padding: 8px;
     max-width: 659px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
 
     @media (max-width: 1024px) {
       padding: 0;

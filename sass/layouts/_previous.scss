@@ -22,6 +22,7 @@
       left: 38px;
       bottom: -50px;
       z-index: -1;
+      filter: unset;
 
       @media (max-width: 1024px) {
         left: auto;
@@ -29,18 +30,17 @@
     }
 
     .previous-work__desc {
-      display: none;
       .h2 {
         margin-bottom: 24px;
         max-width: 540px;
         font-size: 48px;
         letter-spacing: -1.92px;
         
-        @media (max-width:1024px){
+        @media (max-width: 1024px){
           font-size: 36px;
         }
         
-        @media (max-width:767px) {
+        @media (max-width: 767px) {
           text-align: center;
           font-size: 30px;
           max-width: unset;
@@ -63,7 +63,7 @@
     }
   }
 
-  &__servicespagebg {
+  .previous-work__bg {
     left: -93px;
     top: -84px;
     z-index: -1;
@@ -91,7 +91,7 @@
     &:nth-child(1) {
       flex-basis: 460px;
 
-      @media (max-width:1200px) {
+      @media (max-width: 1200px) {
         flex-basis: unset;
       }
     }
@@ -99,7 +99,7 @@
     &:nth-child(2) {
       flex-basis: 618px;
 
-      @media (max-width:1200px) {
+      @media (max-width: 1200px) {
         flex-basis: unset;
       }
     }
@@ -107,7 +107,7 @@
     &:nth-child(3) {
       flex-basis: 618px;
 
-      @media (max-width:1200px) {
+      @media (max-width: 1200px) {
         flex-basis: unset;
       }
     }
@@ -125,18 +125,17 @@
       height: 100%;
       max-height: 550px;
 
-      @media (max-width:1200px) {
+      @media (max-width: 1200px) {
         flex-basis: unset;
       }
     }
   }
 
   &__tags {
-    display: none;
     max-width: 360px;
     gap: 8px;
     
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       justify-content: center;
     }
   
