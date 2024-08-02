@@ -1,0 +1,47 @@
+.img-w-text {
+  .container {
+    gap: 64px;
+  
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    max-width: 100%;
+    width: 372px;
+    height: 483px;
+    background-color: var(--color-8);
+    border-radius: 24px;
+  }
+
+  &__details {
+    max-width: 654px;
+
+    h2 {
+      line-height: 1.1;
+      margin-bottom: 16px;
+      letter-spacing: -1.92px;
+
+      @media (max-width: 1024px) {
+        text-align: center;
+        letter-spacing: unset;
+      }
+    }
+
+    p {
+      margin-bottom: 24px;
+
+      @media (max-width: 1024px) {
+        text-align: center;
+      }
+    }
+
+    a {
+      background-image: var(--color-gradient);
+      max-width: 207px;
+      line-height: 1.7;
+      padding: 12px 39px;
+    }
+  }
+}
