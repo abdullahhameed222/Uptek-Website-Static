@@ -57,3 +57,31 @@
     -moz-appearance: textfield;
 }
 }
+
+.search__field {
+  background-color: transparent;
+  font-family: var(--font-heading);
+  color: var(--color-4);
+  font-size: 24px;
+  width: 100%;
+  max-width: 447px;
+  padding: 16px 16px 16px 54px;
+  border: none;
+  border-bottom: 1px solid var(--color-4);
+
+  &::placeholder {
+    font-size: 24px;
+    color: var(--color-4);  
+  }
+}
+
+input[type=text].search__field {
+  background-position: 16px 19px;
+  background-image: url("../assets/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
