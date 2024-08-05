@@ -3663,7 +3663,7 @@ main {
 .hero-about .section-header__gradient {
 	z-index: -1;
 	filter: unset;
-	left: -14%;
+	left: -20%;
 	bottom: 40px;
 	top: auto;
 }
