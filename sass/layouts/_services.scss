@@ -1,17 +1,15 @@
 .services {
   .section-header {
+    
     .h2 {
       max-width: 442px;
 
       @media (max-width: 767px) {
         margin-bottom: 30px;
-      }
-    }
-
-      @media (max-width: 767px) {
         flex-direction: column;
         text-align: center;
       }
+    }
 
       &__gradient {
         filter: unset;

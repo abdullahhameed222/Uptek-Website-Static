@@ -1785,11 +1785,6 @@ main {
 @media (max-width: 767px) {
 	.services .section-header .h2 {
 		margin-bottom: 30px;
-	}
-}
-
-@media (max-width: 767px) {
-	.services .section-header {
 		flex-direction: column;
 		text-align: center;
 	}
@@ -2104,14 +2099,17 @@ main {
 	gap: 8px;
 }
 
+@media (max-width: 1024px) {
+	.previous-work__tags {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 @media (max-width: 767px) {
 	.previous-work__tags {
 		justify-content: center;
 	}
-}
-
-.previous-work__tags .flex {
-	gap: 8px;
 }
 
 .previous-work__tag {
@@ -2123,6 +2121,14 @@ main {
 	padding: 12px 24px;
 	line-height: 1.7;
 	border-radius: 100px;
+}
+
+.previous-work__tag:nth-child(3) {
+	max-width: 77px;
+}
+
+.previous-work__tag:nth-child(4) {
+	max-width: 274px;
 }
 
 .previous-work__content {
@@ -3253,14 +3259,17 @@ main {
 	gap: 8px;
 }
 
+@media (max-width: 1024px) {
+	.previous-work__tags {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 @media (max-width: 767px) {
 	.previous-work__tags {
 		justify-content: center;
 	}
-}
-
-.previous-work__tags .flex {
-	gap: 8px;
 }
 
 .previous-work__tag {
@@ -3272,6 +3281,14 @@ main {
 	padding: 12px 24px;
 	line-height: 1.7;
 	border-radius: 100px;
+}
+
+.previous-work__tag:nth-child(3) {
+	max-width: 77px;
+}
+
+.previous-work__tag:nth-child(4) {
+	max-width: 274px;
 }
 
 .previous-work__content {
@@ -4152,12 +4169,19 @@ main {
 @media (max-width: 767px) {
 	.blogs__featured h2 {
 		font-size: 24px;
+		text-align: center;
 	}
 }
 
 .blogs__featured span {
 	display: block;
 	line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+	.blogs__featured span {
+		text-align: center;
+	}
 }
 
 .blogs__cards {
@@ -4167,6 +4191,8 @@ main {
 @media (max-width: 767px) {
 	.blogs__cards {
 		gap: 20px;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -4177,6 +4203,10 @@ main {
 @media (max-width: 767px) {
 	.blogs__card {
 		flex: none;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
@@ -4191,11 +4221,11 @@ main {
 @media (max-width: 767px) {
 	.blogs__card h2 {
 		font-size: 16px;
+		text-align: center;
 	}
 }
 
 .blogs__card-img {
-	width: 100%;
 	height: 148px;
 	max-width: 251px;
 	margin-bottom: 24px;
@@ -4203,8 +4233,20 @@ main {
 	background-color: var(--color-8);
 }
 
+@media (max-width: 767px) {
+	.blogs__card-img {
+		max-width: unset;
+	}
+}
+
 .blogs__card span {
 	line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+	.blogs__card span {
+		text-align: center;
+	}
 }
 
 .sidebar {
@@ -4270,7 +4312,6 @@ main {
 	padding: 8px 16px;
 	border: 1px solid var(--color-3);
 	border-radius: 100px;
-	flex: 0  1 20%;
 	white-space: nowrap;
 }
 
