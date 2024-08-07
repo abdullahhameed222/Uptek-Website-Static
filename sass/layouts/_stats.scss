@@ -51,7 +51,7 @@
 
     &__container {
       max-width: 1140px;
-      gap: 20px 108px;
+      gap: 20px 0;
 
       @media (max-width: 1130px) {
         justify-content: center;
@@ -59,8 +59,9 @@
     }
 
     &__stat {
-      max-width: 171px;
-
+      // max-width: 171px;
+      max-width: 206px;
+      
       h3 {
         font-size: 80px;
         line-height: 1.1;

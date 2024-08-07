@@ -17,6 +17,10 @@
       max-width: 208px;
       border-bottom: 1px solid var(--color-9);
 
+      &:hover{
+        cursor: pointer;
+      }
+
       @media (max-width: 767px) {
         max-width: unset;
       }
@@ -56,6 +60,12 @@
       border: 1px solid var(--color-3);
       border-radius: 100px;
       white-space: nowrap;
+      transition: all 0.2s;
+
+      &:hover{
+        background-color: var(--color-3);
+        cursor: pointer;
+      }
 
       &:nth-child(3){
         max-width: 117px;

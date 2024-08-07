@@ -25,7 +25,9 @@
       flex-direction: column;
     }
 
-    &-img {
+    &-img img {
+      object-fit: cover;
+      object-position: center;
       max-width: 359px;
       width: 100%;
       height: 219px;
@@ -68,6 +70,10 @@
   &__card {
     flex: 1 1 30%;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     @media (max-width: 767px) {
       flex: none;
       display: flex;
@@ -89,11 +95,13 @@
       }
     }
 
-    &-img {
+    &-img img {
       height: 148px;
       max-width: 251px;
       margin-bottom: 24px;
       border-radius: 24px;
+      object-fit: cover;
+      object-position: center;
       background-color: var(--color-8);
 
       @media (max-width: 767px) {

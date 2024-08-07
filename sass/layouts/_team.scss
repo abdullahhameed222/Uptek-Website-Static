@@ -52,9 +52,17 @@
 
     img {
       max-width: 248px;
-      max-height: 369px;
+      height: 369px;
+      max-height: 100%;
       border-radius: 24px;
       margin-bottom: 32px;
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: all 0.2s;
+
+      &:hover {
+        filter: unset;
+      }
     }
 
     h3 {
@@ -68,7 +76,6 @@
       color: var(--color-7);
       font-size: 20px;
       line-height: 1.6;
-      font-weight: bold;
     }
   }
 }

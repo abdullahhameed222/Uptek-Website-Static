@@ -33,11 +33,12 @@
     margin-bottom: 48px;
   }
 
-  &__img {
-    background-color: var(--color-4);
+  &__img img {
     max-width: 100%;
     width: 1090px;
     height: 490px;
     border-radius: 24px;
+    object-fit: cover;
+    object-position: center;
   }
 }
